@@ -1,0 +1,95 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    background: #eee;
+
+}
+/*navbar*/
+.sidebar{
+    height: 100vh;
+    background:linear-gradient(rgba(25, 188, 238, 0.7),rgba(0,0,0,0.7)),url(../img/img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+.bottom-border{
+    border-bottom: 1px solid #eee;
+}
+.sidebar .active {
+    background-color: #5439ee;
+    border-radius: 7px;
+    box-shadow: 2px 5px 20px #111;
+    transition: all .3s ease;
+  }
+  .sidebar .active:hover {
+    background-color: #6e78f8;
+    transform: translateY(-5px);
+  }
+  .sidebar-link {
+    transition: all .3s ease;
+  }
+  .sidebar-link:hover {
+    background-color: rgba(68, 68, 68, 0.63);
+    border-radius: 7px;
+  }
+  .search {
+    color:whitesmoke;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #999;
+    transition: all .4s ease;
+  }
+  
+  .search:focus {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #dc3545;
+  }
+  
+  .search-btn {
+    border-radius: 50%;
+    padding: 10px 16px;
+    transition: all .4s ease;
+  }
+  
+  .search-btn:hover {
+    background-color: #eee;
+    transform: translateY(-1px);
+  }
+  .icon-notify {
+    position: relative;
+  }
+  
+  .icon-notify-link::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #14e459;
+  } 
+  @media (max-width: 768px) {
+    .sidebar {
+      position: static;
+      height: auto;
+    }
+  
+    .top-navbar {
+      position: static;
+    }
+  } 
+  /* cards */
+.card-common {
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+
+.card-common:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+/* end of cards */
